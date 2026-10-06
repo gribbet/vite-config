@@ -1,0 +1,73 @@
+import { defineConfig as defineViteConfig, mergeConfig } from "vite-plus";
+
+export const config = {
+  fmt: {
+    arrowParens: "avoid",
+    printWidth: 80,
+    sortImports: {},
+  },
+  lint: {
+    categories: {
+      correctness: "error",
+    },
+    options: {
+      typeAware: true,
+      typeCheck: true,
+    },
+    rules: {
+      "arrow-body-style": ["error", "as-needed"],
+      curly: ["error", "multi"],
+      eqeqeq: "error",
+      "func-style": ["error", "expression"],
+      "no-array-constructor": "error",
+      "no-case-declarations": "error",
+      "no-empty": "error",
+      "no-fallthrough": "error",
+      "no-prototype-builtins": "error",
+      "no-regex-spaces": "error",
+      "no-unused-expressions": ["error", { allowTaggedTemplates: true }],
+      "no-unused-vars": "error",
+      "no-useless-assignment": "error",
+      "no-var": "error",
+      "object-shorthand": ["error", "always"],
+      "prefer-arrow-callback": "error",
+      "prefer-const": "error",
+      "prefer-destructuring": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+      "preserve-caught-error": "error",
+      "typescript/ban-ts-comment": "error",
+      "typescript/consistent-type-definitions": ["error", "type"],
+      "typescript/consistent-type-imports": "error",
+      "typescript/no-empty-object-type": "error",
+      "typescript/no-explicit-any": "error",
+      "typescript/no-inferrable-types": "error",
+      "typescript/no-misused-promises": "error",
+      "typescript/no-namespace": "error",
+      "typescript/no-require-imports": "error",
+      "typescript/no-unnecessary-condition": [
+        "error",
+        {
+          allowConstantLoopConditions: "only-allowed-literals",
+        },
+      ],
+      "typescript/no-unnecessary-type-assertion": "error",
+      "typescript/no-unnecessary-type-constraint": "error",
+      "typescript/no-unsafe-argument": "error",
+      "typescript/no-unsafe-assignment": "error",
+      "typescript/no-unsafe-call": "error",
+      "typescript/no-unsafe-enum-comparison": "error",
+      "typescript/no-unsafe-function-type": "error",
+      "typescript/no-unsafe-member-access": "error",
+      "typescript/no-unsafe-return": "error",
+      "typescript/only-throw-error": "error",
+      "typescript/prefer-nullish-coalescing": "error",
+      "typescript/prefer-promise-reject-errors": "error",
+      "typescript/require-await": "error",
+      "typescript/restrict-plus-operands": "error",
+    },
+  },
+};
+
+export const defineConfig = (overrides = {}) =>
+  defineViteConfig(mergeConfig(config, overrides));
