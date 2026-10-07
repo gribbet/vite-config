@@ -36,7 +36,6 @@ export const config = {
       "prefer-rest-params": "error",
       "prefer-spread": "error",
       "preserve-caught-error": "error",
-      "sort-imports": "error",
       "typescript/ban-ts-comment": "error",
       "typescript/consistent-type-definitions": ["error", "type"],
       "typescript/consistent-type-imports": "error",
