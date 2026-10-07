@@ -23,10 +23,10 @@
     "prepublishOnly": "npm run check"
   },
   "devDependencies": {
-    "vite-plus": "1.0.0"
+    "vite-plus": "1.1.0"
   },
   "peerDependencies": {
-    "vite-plus": "1.0.0"
+    "vite-plus": "1.1.0"
   },
   "overrides": {
     "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0"
