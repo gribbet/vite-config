@@ -14,6 +14,7 @@ export const config = {
       typeAware: true,
       typeCheck: true,
     },
+    plugins: ["import", "oxc", "typescript", "unicorn"],
     rules: {
       "arrow-body-style": ["error", "as-needed"],
       curly: ["error", "multi"],
