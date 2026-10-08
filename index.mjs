@@ -19,6 +19,9 @@ export const config = {
       curly: ["error", "multi"],
       eqeqeq: "error",
       "func-style": ["error", "expression"],
+      "import/consistent-type-specifier-style": "error",
+      "import/no-cycle": "error",
+      "import/no-duplicates": "error",
       "no-array-constructor": "error",
       "no-case-declarations": "error",
       "no-empty": "error",
@@ -65,6 +68,7 @@ export const config = {
       "typescript/prefer-promise-reject-errors": "error",
       "typescript/require-await": "error",
       "typescript/restrict-plus-operands": "error",
+      "typescript/unbound-method": "off",
     },
   },
 };
