@@ -1,6 +1,6 @@
 {
   "name": "@gribbet/vite-config",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Shared Vite+ configuration.",
   "license": "MIT",
   "files": [
